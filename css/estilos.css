@@ -730,7 +730,10 @@ footer{
             width: 70%;
         }
 
-
+        .imagen-productos img{
+            width: 85%;
+        }
+        
         /* SECCION SERVICIOS */
 
         .servicios-container{
