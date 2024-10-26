@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css" />
+    <link rel="shortcut icon" href="../img/logos/logo.jpg" />
+    <title>Sapori di Roma</title>
+  </head>
+  <body>
+    <!-- BOTON DE IR ARRIBA -->
+    <div id="btn-top">
+      <span class="fas fa-arrow-alt-circle-up"></span>
+    </div>
+    <!-- MENU PRINCIPAL -->
+    <div class="menu-principal">
+      <div class="logo" id="logo">
+        <img src="../img/logos/Logo letras.png  " alt="Logo" />
+      </div>
+
+      <div class="menu-bar" id="menuBar">
+        <i class="fas fa-angle-right" id="btnMenuClose"></i>
+
+        <nav class="enlaces" id="enlaces">
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#equipo">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="sociales">
+          <a href="#"><span class="fab fa-facebook"></span></a>
+          <a href="#"><span class="fab fa-instagram"></span></a>
+          <a href="#"><span class="fab fa-twitter"></span></a>
+          <a href="#"><span class="fab fa-youtube"></span></a>
+        </div>
+      </div>
+
+      <i class="fas fa-bars" id="btnMenuOpen"></i>
+    </div>
+
+    <!-- SLIDER DE PRODUCTOS -->
+    <section id="menu-productos">
+      <div class="contenedor-principal">
+        <button id="btn-izquierda">
+          <span class="fas fa-angle-left"></span>
+        </button>
+
+        <div class="slider">
+          <div class="container-productos">
+            <div class="descripcion-productos">
+              <h2>Producto <b>premium</b></h2>
+              <h1>Pasta a la rueda</h1>
+              <p>
+                ¡La joya de nuestra cocina! Imagina la calidez de la pasta
+                recién hecha fundiéndose con la esencia del auténtico Parmigiano
+                Reggiano, directamente desde una rueda de queso tallada a mano.
+                Cada bocado te transportará a las colinas de Italia, con su
+                cremosidad irresistible y un toque de indulgencia italiana. Una
+                experiencia gastronómica que captura la tradición y el arte
+                culinario de Italia. ¡Un plato icónico, digno de compartir y
+                disfrutar!
+              </p>
+
+              <button class="btn">
+                Solicitar reserva <span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="imagen-productos">
+              <img src="../img/menu/Pasta a la rueda.png" alt="" />
+            </div>
+          </div>
+
+          <div class="container-productos">
+            <div class="descripcion-productos">
+              <h2>Producto <b>especial</b></h2>
+              <h1>Pizza bianca</h1>
+              <p>
+                Una deliciosa obra maestra italiana sin salsa de tomate, con una
+                base cremosa de ricotta y pancetta crujiente. Suave y llena de
+                sabor, esta pizza es una experiencia gourmet que no te puedes
+                perder. ¡Déjate seducir por su elegancia!
+              </p>
+
+              <button class="btn">
+                Solicitar reserva <span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="imagen-productos">
+              <img src="../img/menu/Pizza bianca.png" alt="" />
+            </div>
+          </div>
+
+          <div class="container-productos">
+            <div class="descripcion-productos">
+              <h2>Producto <b>especial</b></h2>
+              <h1>Tagliatelle con trufa</h1>
+              <p>
+                Deléitate con nuestra exquisita pasta fresca, bañada en una
+                suave salsa de trufa negra que resalta su sabor auténtico. Este
+                plato, adornado con finas láminas de trufa, ofrece una
+                experiencia culinaria lujosa y aromática. Perfecto para los
+                amantes de la buena comida, cada bocado es un viaje a la esencia
+                de la alta gastronomía italiana.
+              </p>
+
+              <button class="btn">
+                Solicitar reserva <span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="imagen-productos">
+              <img src="../img/menu/Tagliatelle con trufa negra.jpeg" alt="" />
+            </div>
+          </div>
+
+          <div class="container-productos">
+            <div class="descripcion-productos">
+              <h2>Producto <b>especial</b></h2>
+              <h1>Spaguetti carbonara</h1>
+              <p>
+                Sumérgete en la auténtica tradición italiana con nuestro
+                delicioso spaghetti a la carbonara. Preparado con pasta al
+                dente, pancetta crujiente y una cremosa mezcla de yema de huevo
+                y queso pecorino, este plato clásico combina sabores intensos y
+                reconfortantes en cada bocado. Una experiencia culinaria que
+                captura la esencia de Italia. ¡Perfecto para los amantes de la
+                buena pasta!
+              </p>
+
+              <button class="btn">
+                Solicitar reserva <span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="imagen-productos">
+              <img src="../img/menu/Spaguetti a la carbonara.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <button id="btn-derecha">
+          <span class="fas fa-angle-right"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+      <div class="servicios-titulos">
+        <h2 class="subtitulos">La mejor pasta elaborada a mano</h2>
+        <h1 class="titulos">Bienvenidos a Sapori di Roma</h1>
+      </div>
+
+      <div class="servicios-container">
+        <div class="items calidad">
+          <div><span class="fas fa-pizza-slice"></span></div>
+          <p class="titulo-item">Calidad</p>
+          <p class="texto-item">
+            Nos comprometemos a ofrecerte una experiencia gastronómica de la más
+            alta calidad, seleccionando cuidadosamente cada ingrediente y
+            elaborando cada plato con precisión y pasión.
+          </p>
+        </div>
+
+        <div class="items ingredientes">
+          <div><span class="fas fa-cheese"></span></div>
+          <p class="titulo-item">Ingredientes</p>
+          <p class="texto-item">
+            Trabajamos exclusivamente con ingredientes frescos, combinados con
+            productos italianos auténticos, como aceites de oliva virgen extra,
+            quesos artesanales y elaboración de pasta propia.
+          </p>
+        </div>
+
+        <div class="items rapidez">
+          <div><span class="fa-solid fa-book"></span></div>
+          <p class="titulo-item">Tradicion</p>
+          <p class="texto-item">
+            Nuestra cocina se basa en las recetas tradicionales italianas
+            transmitidas de generación en generación. Cada plato cuenta una
+            historia, trayendo a tu mesa la esencia de la cultura y la pasión
+            italiana.
+          </p>
+        </div>
+
+        <div class="items delivery">
+          <div><span class="fa-duotone fa-solid fa-wine-glass"></span></div>
+          <p class="titulo-item">Experiencia gastronómica</p>
+          <p class="texto-item">
+            En nuestro restaurante, no solo disfrutarás de una comida; vivirás
+            una experiencia completa. Desde el ambiente hasta la atención
+            personalizada, nos esforzamos por ofrecer una velada inolvidable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION OBJETIVOS -->
+    <section id="equipo">
+      <div class="imagenes">
+        <img src="../img/menu/Chef.jpg" alt="" class="equipo-imagen" />
+        <div class="restaurante-info">
+          <h2>Chefs especializados</h2>
+          <p>
+            Nuestros chefs expertos en cocina italiana combinan tradición y
+            creatividad para ofrecer auténticos sabores de Italia.
+          </p>
+        </div>
+      </div>
+
+      <div class="imagenes">
+        <img src="../img/menu/Emplatado.jpg" alt="" class="equipo-imagen" />
+        <div class="restaurante-info">
+          <h2>Platos personalizados</h2>
+          <p>
+            Diseñamos cada plato según tus preferencias, utilizando ingredientes
+            frescos y recetas italianas tradicionales.
+          </p>
+        </div>
+      </div>
+
+      <div class="imagenes">
+        <img src="../img/menu/Comensales.jpg" alt="" class="equipo-imagen" />
+        <div class="restaurante-info">
+          <h2>Esencia italiana</h2>
+          <p>
+            Sumérgete en un viaje culinario que captura la esencia de Italia,
+            combinando un ambiente acogedor y un servicio impecable para una
+            experiencia memorable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+      <div class="titulo-contacto">
+        <h2 class="subtitulos">
+          ¿Tienes nuevas ideas para compartir con nosotros?
+        </h2>
+        <h1 class="titulos">¡Contáctanos!</h1>
+      </div>
+
+      <form action="" id="formulario">
+        <div class="two-fields">
+          <div class="inputConIcon">
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="input-text"
+              placeholder="Nombre"
+            />
+            <i class="fas fa-user"></i>
+          </div>
+
+          <div class="inputConIcon">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="input-email"
+              placeholder="Email"
+            />
+            <i class="fas fa-envelope"></i>
+          </div>
+        </div>
+
+        <div class="fields">
+          <div class="inputConIcon textareaIcon">
+            <textarea
+              name="comentarios"
+              id="comentarios"
+              class="textarea"
+              placeholder="Indícanos tus sugerencias"
+            ></textarea>
+            <i class="fas fa-comments"></i>
+          </div>
+        </div>
+
+        <div class="fields-btn">
+          <input type="submit" class="btn btn-input" value="Enviar" />
+        </div>
+      </form>
+    </section>
+
+    <!-- ALERTAS -->
+    <div class="alertas">
+      <div id="alertError" class="alert hide">
+        <span class="icono-alert fas fa-exclamation-circle"></span>
+        <span class="msg">Error: campos de entrada vacíos.</span>
+      </div>
+
+      <div id="alertSuccess" class="alert hide">
+        <span class="icono-alert fas fa-check-circle"></span>
+        <span class="msg">¡Datos enviados! Gracias por contactarnos.</span>
+      </div>
+    </div>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <div class="sociales-metodo">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Lorem ipsum dolor sit amet.</span>
+      </div>
+
+      <div class="sociales-metodo">
+        <i class="fas fa-envelope"></i>
+        <span>info@saporidiroma.com</span>
+      </div>
+
+      <div class="sociales-metodo">
+        <i class="fas fa-phone"></i>
+        <span>+34 000 000 000</span>
+      </div>
+
+      <div class="sociales-metodo">
+        <i class="fab fa-instagram"></i>
+        <span>@saporidiroma</span>
+      </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

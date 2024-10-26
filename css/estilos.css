@@ -1,0 +1,969 @@
+/* VARIABLES */
+
+@font-face {
+    font-family: "Dosis";
+    src: url(../lib/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url(../lib/League/LeagueSpartan-VariableFont_wght.ttf);
+}
+:root{
+    --color-primario: #BFA129;
+    --color-secundario: #8F7F3E;
+    --color-background-sombra: #8F7F3E30;
+    --color-background: #EFF6F5;
+    --color-texto: #929292af;
+    --text-default: "Dosis";
+    --text-primary: "League Spartan";
+}   
+
+/* GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-default);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--color-background);
+}
+
+.titulos{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.subtitulos{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-primario);
+}
+
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    background: var(--color-primario);
+    font-weight: 700;
+    padding: 15px 30px;
+    outline: none;
+    border: 2px solid var(--color-primario);
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    transition: all .3s;
+}
+
+.btn span{
+    padding-left: 10px;
+}
+
+.btn:hover{
+    padding: 15px 45px;
+}
+
+
+
+/* MENU PRINCIPAL */
+.menu-principal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 0 30px;
+    margin-top: 10px;
+    background: var(--color-background);
+    z-index: 1;
+}
+
+.logo{
+    width: 350px;
+    cursor: pointer;
+}
+
+.menu-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-bar .enlaces ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu-bar .enlaces ul li a{
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background: linear-gradient(currentColor, currentColor);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: all .5s;
+}
+
+
+.menu-bar .enlaces ul li a:hover{
+    color: var(--color-secundario);
+    background-size: 50% 2px;
+}
+
+.menu-bar .sociales a{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    transition: all .5s;
+}
+
+.menu-bar .sociales a:hover{
+    color: var(--color-secundario);
+}
+
+.menu-principal i{
+    cursor: pointer;
+    color: var(--color-texto);
+    font-size: 30px;
+    float: right;
+    display: none;
+    transition: all .5s;
+}
+
+.menu-principal i:hover{
+    color: var(--color-secundario);
+}
+
+
+
+
+
+
+/* SLIDER DE PRODUCTOS */
+#menu-productos .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.contenedor-principal #btn-izquierda,
+.contenedor-principal #btn-derecha{
+    position: absolute;
+    height: 10%;
+    width: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 40px;
+    margin: 0 15px;
+    color: var(--color-secundario);
+    z-index: 500;
+    outline: none;
+    transition: all .3s;
+}
+
+
+.contenedor-principal #btn-izquierda:hover,
+.contenedor-principal #btn-derecha:hover{
+    background: #8F7F3E30;
+    transform: translateY(5px);
+}
+
+
+.contenedor-principal #btn-izquierda{
+    left: 0;
+}
+
+
+.contenedor-principal #btn-derecha{
+    right: 0;
+}
+
+
+.slider{
+    display: flex;
+    overflow: hidden;
+    height: calc (100vh - 80px);
+    scroll-behavior: smooth;
+}
+
+.container-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+
+.descripcion-productos{
+    width: 30%;
+}
+
+.descripcion-productos h1{
+    font-family: var(--text-primary);
+    font-size: 6vw;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+.descripcion-productos h2{
+    font-family: var(--text-primary);
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+.descripcion-productos h2 b{
+    font-family: var(--text-primary);
+}
+.descripcion-productos p{
+    color: var(--color-texto);
+    font-family: var(--text-default);
+    text-align: justify;
+    font-size: 1vw;
+}
+
+.imagen-productos{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-productos img{
+    width: 70%;
+    transform: scale(1.1);
+    transition: all .3s;
+    border-radius: 14%;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.container-productos:hover .imagen-productos img{
+    transform: scale(1.15);
+}
+
+
+/* SECCION SERVICIOS */
+#servicios{
+    height: 100%;
+    background: #fff;
+    padding: 40px;
+}
+
+.servicios-titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;  
+}
+
+.servicios-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+    grid-template-areas: "calidad   ingredientes"
+                         "rapidez   delivery";
+}
+
+.calidad{
+    grid-row: calidad;
+    grid-column: calidad;
+}
+
+.ingredientes{
+    grid-row: ingredientes;
+    grid-column: ingredientes;
+}
+
+.rapidez{
+    grid-row: rapidez;
+    grid-column: rapidez;
+}
+
+.delivery{
+    grid-row: delivery;
+    grid-column: delivery;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items span{
+    width: 95px;
+    font-size: 40px;
+    color: var(--color-primario);
+    padding: 20px;
+    border: 5px double var(--color-secundario);
+    border-radius: 50%;
+    transition: all .5s;
+    text-align: center;
+}
+
+.items span:hover{
+    background: var(--color-primario);
+    color: #FFF;
+}
+
+.items .titulo-item{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+.items .texto-item{
+    font-size: 20px;
+    color: var(--color-texto);
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+}
+.servicios-container{
+    background-color: #8d7b3430;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+
+/* SECCION OBJETIVOS */
+#equipo{
+    height: 80vh;
+    display: flex;
+    width: 100%;
+    padding: 0 40px;
+    justify-content: center;
+}
+
+.imagenes{
+    flex-basis: 30%;
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s;
+    min-width: 250px;
+}
+
+.imagenes:hover{
+    flex-grow: 6;
+}
+
+.equipo-imagen{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+}
+
+.imagenes:hover .equipo-imagen{
+    filter: grayscale(0%);
+    padding: 0 100px;
+}
+
+.imagenes:hover .restaurante-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: 0.3s;
+}
+.restaurante-info{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all .1s;
+}
+
+.restaurante-info h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.restaurante-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    transition: all 0.1s;
+    color: var(--color-background);
+    padding: 10px;
+    background: #aaaaaa80;
+    bottom: 0;
+}
+.restaurante-info p{
+    font-family: var(--text-default);
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    padding: 0 100px;
+}
+
+/* SECCION CONTACTO */
+
+#contacto{
+    padding: 60px;
+    position: relative;
+}
+
+#formulario{
+    width: 70%;
+    margin: 50px auto;
+}
+
+.two-fields{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-text, .input-email, .textarea{
+    border: 1px solid #b4b4b4;
+    color: #888;
+    background: #fff;
+    outline: none;
+    padding: 15px 60px;
+    height: 45px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.input-text, .input-email{
+    width: 100%;
+}
+
+.inputConIcon{
+    position: relative;
+    width: 48%;
+}
+
+.inputConIcon i{
+    position: absolute;
+    left: 0;
+    padding: 14px 15px;
+    background: #888;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+
+.textareaIcon{
+    width: 100%;
+}
+
+.textareaIcon i{
+    background: transparent;
+    color: #888;
+    padding: 0;
+    font-size: 25px;
+    left: 17px;
+    top: 13px;
+    transition: all 0.5s;
+}
+
+.inputConIcon input:focus,
+.inputConIcon textarea:focus{
+    border: 1px solid var(--color-primario);
+}
+
+
+.inputConIcon input:focus + i{
+    background: var(--color-primario);
+}
+
+.inputConIcon textarea:focus + i{
+    color: var(--color-primario);
+}
+
+
+.fields-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-input{
+    padding: 15px 50px;
+}
+
+.btn-input:hover{
+    padding: 15px 65px;
+}
+
+/* ALERTAS */
+.alertas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert{
+    width: 60%;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    transition: all .5s;
+}
+
+.alert.show{
+    transform: translateY(50%);
+}
+
+.alert.hide{
+    transform: translateY(-110%);
+}
+
+.alert .icono-alert{
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    transform: translateY(-110%);
+    font-size: 30px;
+}
+
+.alert .msg{
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+#alertError{
+    background: #f8d7da;
+    border-right: 4px solid #da3748;
+}
+
+#alertError .icono-alert{
+    color: #da3748;
+}
+
+#alertError .msg{
+    color: #721c24;
+}
+
+
+#alertSuccess{
+    background: #d4edda;
+    border-right: 4px solid #279e43;
+}
+
+#alertSuccess .icono-alert{
+    color: #279e43;
+}
+
+#alertSuccess .msg{
+    color: #155724;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+}
+
+.sociales-metodo{
+    width: 25%;
+    height: 100px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sociales-metodo i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    line-height: 100px;
+    transition: all .5s;
+}
+
+.sociales-metodo span{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+    font-size: 17px;
+    background: var(--color-primario);
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transform: translateY(60px);
+    transition: all .5s;
+}
+
+.sociales-metodo i:hover + span{
+    transform: translateY(0px);
+}
+
+.sociales-metodo i:hover{
+    transform: translateY(-20px);
+}
+
+/* BOTON DE IR ARRIBA */
+#btn-top{
+    width: 50px;
+    height: 50px;
+    color: var(--color-primario);
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transform: translateY(200%);
+    z-index: 1;
+    transition: all .5s;
+}
+
+#btn-top.show{
+    transform: translateY(0);
+}
+
+#btn-top.scrollFinal{
+    transform: translateY(-250%);
+}
+
+#btn-top span{
+   font-size: 40px;
+   width: 100%;
+   text-align: center; 
+   line-height: 50px;
+   transition: all .5s;
+}
+
+#btn-top:hover{
+    color: var(--color-secundario);
+}
+
+#btn-top:hover span{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 1080px){
+        /* SLIDER PRODUCTOS */
+        .container-productos{
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .descripcion-productos{
+            width: 55%;
+            order: 1;
+        }
+
+        .descripcion-productos p{
+            font-size: 2.2vw;
+        }
+
+        .descripcion-productos .btn{
+            padding: 10px 20px;
+        }
+
+        .descripcion-productos .btn:hover{
+            padding: 10px 30px;
+        }
+
+        .imagen-productos{
+            width: 70%;
+        }
+
+
+        /* SECCION SERVICIOS */
+
+        .servicios-container{
+            margin-top: 50px;
+        }
+
+        /* SECCION OBJETIVOS */
+        
+        #equipo{
+            padding: 0px;
+        }
+       
+       .imagenes {
+           padding: 0px; 
+           width: 100%;
+       }
+    
+       .imagenes {
+            flex-basis: 2px;
+            flex-grow: 3;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.5s;
+            min-width: auto;
+        }
+    
+        .imagenes:hover {
+            flex-grow: 6;
+        }
+    
+        .imagenes:hover .restaurante-info {
+            display: flex;
+        }
+    
+        .restaurante-info {
+            display: none;
+            min-width: 100px;
+            height: 60%;
+            flex-direction: column;      
+        }
+    
+        .restaurante-info p {
+            width: 100%;
+            font-size: 20px;
+        }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 750px){
+
+    /* MENU PRINCIPAL */
+    .menu-principal {
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+    }
+
+    .menu-principal i {
+        display: block;
+    }
+
+    .imagen-productos {
+        width: 100%;
+    }
+    
+    .menu-bar {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        background: #333;
+        transition: all 1s;
+        transform: translateX(100%);  
+    }
+
+    .menu-bar.active {
+        transform: translateX(0%);
+    }
+
+    .menu-bar i {
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        color: #FFF;
+    }
+
+    .menu-bar .enlaces ul li {
+        display: block;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .menu-bar .enlaces ul li a,
+    .menu-bar .sociales a {
+        font-size: 20px;
+        color: #FFF;
+    }
+
+    .descripcion-productos p {
+        font-size: 3vw;
+    }
+
+      /* SECCION SERVICIOS */
+
+    #servicios {
+        padding: 40px 60px;
+    }
+
+    .container-servicios {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .items-servicio {
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .items-servicio p {
+        max-width: 340px;
+    }
+
+    .titulo-item{
+        font-size: 24px;
+    }
+
+    .text-item{
+        font-size: 16px;
+    }
+
+    /* SLIDER PRODUCTOS */
+    .slider{
+        height: calc(90vh - 0px);
+    }
+
+    .imagen-productos{
+        width: 70%;
+    }
+
+    .descripcion-productos h1{
+        font-size: 7vw;
+    }
+
+    .descripcion-productos h2{
+        font-size: 3vw;
+    }
+
+
+    /* SECCION OBJETIVOS */
+
+    #equipo{
+        padding: 0px;
+    }
+   
+   .imagenes {
+       padding: 0px; 
+       width: 100%;
+   }
+
+   .imagenes {
+        flex-basis: 2px;
+        flex-grow: 3;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s;
+        min-width: auto;
+    }
+
+    .imagenes:hover {
+        flex-grow: 30;
+    }
+
+    .imagenes:hover .restaurante-info {
+        display: flex;
+    }
+
+    .restaurante-info {
+        display: none;
+        min-width: 300px;
+        height: 60%;
+        flex-direction: column;      
+    }
+
+    .restaurante-info p {
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    /* CONTACTOS */
+    #formularios{
+        width: 100%;
+    }
+
+    .two-fields{
+        flex-direction: column;
+    }
+
+    .inputConIcon{
+        width: 100%;
+    }
+
+
+    /* ALERTAS */
+    .alert{
+        width: 100%;
+    }
+
+    .alert.show{
+        transform: translateY(150%);
+    }
+
+    /* FOOTER */
+    footer{
+        flex-wrap: wrap;
+    }
+
+    .sociales-metodo{
+        width: 50%;
+    }
+
+    /* BOTON DE IR ARRIBA */
+    #btn-top{
+        display: none;
+    }
+}
