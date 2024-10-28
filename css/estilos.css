@@ -846,33 +846,36 @@ footer{
         font-size: 3vw;
     }
 
-      /* SECCION SERVICIOS */
+    /* SECCION SERVICIOS */
 
     #servicios {
-        padding: 40px 60px;
+        padding: 20px; 
     }
 
-    .container-servicios {
+    .servicios-container {
+        grid-template-columns: 1fr; 
+        grid-gap: 20px; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .items span {
+        display: flex;
+        width: 50px; 
+        font-size: 25px; 
+        padding: 10px; 
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        gap: 40px;
     }
 
-    .items-servicio {
-        flex-direction: column;
-        max-width: 100%;
-        text-align: center;
+    .items .titulo-item {
+        font-size: 5vw; 
     }
 
-    .items-servicio p {
-        max-width: 340px;
-    }
-
-    .titulo-item{
-        font-size: 24px;
-    }
-
-    .text-item{
-        font-size: 16px;
+    .items .texto-item {
+        font-size: 4vw; 
+        line-height: 1.4; 
     }
 
     /* SLIDER PRODUCTOS */
