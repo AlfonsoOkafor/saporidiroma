@@ -846,6 +846,7 @@ footer{
         font-size: 3vw;
     }
 
+
     /* SECCION SERVICIOS */
 
     #servicios {
@@ -877,7 +878,7 @@ footer{
         font-size: 4vw; 
         line-height: 1.4; 
     }
-
+    
     /* SLIDER PRODUCTOS */
     .slider{
         height: calc(90vh - 0px);
