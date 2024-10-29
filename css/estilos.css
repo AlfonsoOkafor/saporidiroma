@@ -816,7 +816,13 @@ footer{
 
         .btn{
             font-weight: 600;
+            padding: 15px 20px;
         }
+    
+        .btn span{
+            padding-left: 0px;
+        }
+        
     
         /* MENU PRINCIPAL */
         .menu-principal {
@@ -914,6 +920,7 @@ footer{
         }
     
         /* SLIDER PRODUCTOS */
+        
         .slider{
             height: calc(90vh - 0px);
         }
@@ -924,12 +931,12 @@ footer{
     
         .imagen-productos {
             width: 90%;
-            height: 40%;
+            height: 45%;
             margin-bottom: 20px;
         }
     
         .imagen-productos img {
-            width: 90%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
