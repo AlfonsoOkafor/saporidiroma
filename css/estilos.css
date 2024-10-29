@@ -14,7 +14,7 @@
     --color-secundario: #8F7F3E;
     --color-background-sombra: #8F7F3E30;
     --color-background: #EFF6F5;
-    --color-texto: #929292af;
+    --color-texto: #000;
     --text-default: "Dosis";
     --text-primary: "League Spartan";
 }   
@@ -140,7 +140,7 @@ body{
 
 .menu-principal i{
     cursor: pointer;
-    color: var(--color-texto);
+    color: var(--color-primario);
     font-size: 30px;
     float: right;
     display: none;
@@ -964,6 +964,14 @@ footer{
             width: 100%;
         }
     
+        .inputConIcon i{
+            padding: 15px 15px;
+        }
+    
+        .textareaIcon i{
+            top: 0;
+            left: -5px;
+        }
     
         /* ALERTAS */
         .alert{
