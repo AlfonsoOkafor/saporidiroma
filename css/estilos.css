@@ -261,6 +261,8 @@ body{
 }
 
 
+
+
 /* SECCION SERVICIOS */
 #servicios{
     height: 100%;
@@ -350,6 +352,8 @@ body{
 }
 
 
+
+
 /* SECCION OBJETIVOS */
 #equipo{
     height: 80vh;
@@ -432,6 +436,9 @@ body{
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     padding: 0 100px;
 }
+
+
+
 
 /* SECCION CONTACTO */
 
@@ -530,6 +537,9 @@ body{
     padding: 15px 65px;
 }
 
+
+
+
 /* ALERTAS */
 .alertas{
     display: flex;
@@ -593,6 +603,9 @@ body{
     color: #155724;
 }
 
+
+
+
 /* FOOTER */
 
 footer{
@@ -642,6 +655,9 @@ footer{
 .sociales-metodo i:hover{
     transform: translateY(-20px);
 }
+
+
+
 
 /* BOTON DE IR ARRIBA */
 #btn-top{
@@ -902,17 +918,29 @@ footer{
             height: calc(90vh - 0px);
         }
     
-        .imagen-productos{
-            width: 70%;
+        #menu-productos .contenedor-principal {
+            justify-content: center;
         }
     
-        .descripcion-productos h1{
-            font-size: 7vw;
+        .imagen-productos {
+            width: 90%;
+            height: 40%;
+            margin-bottom: 20px;
         }
     
-        .descripcion-productos h2{
-            font-size: 3vw;
+        .imagen-productos img {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
+    
+        .contenedor-principal #btn-izquierda,
+        .contenedor-principal #btn-derecha{
+        top: 50%;
+    }
+    
+
+        
     
     
         /* SECCION OBJETIVOS */
