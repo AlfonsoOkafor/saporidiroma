@@ -869,7 +869,7 @@ footer{
     
         .servicios-container {
             grid-template-columns: 1fr; 
-            grid-gap: 20px; 
+            grid-gap: 60px; 
             display: flex;
             flex-wrap: wrap;
         }
