@@ -919,6 +919,7 @@ footer{
 
         .descripcion-productos h1 {
             font-size: 8vw; 
+            letter-spacing: -1px;
         }
     
         .descripcion-productos h2 {
