@@ -886,7 +886,48 @@ footer{
         .descripcion-productos p {
             font-size: 4.2vw;        
         }
+
+
     
+
+        /* SLIDER PRODUCTOS */
+        
+        .slider{
+            height: calc(90vh - 0px);
+        }
+    
+        #menu-productos .contenedor-principal {
+            justify-content: center;
+        }
+    
+        .imagen-productos {
+            width: 90%;
+            height: 45%;
+            margin-bottom: 20px;
+        }
+    
+        .imagen-productos img {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .contenedor-principal #btn-izquierda,
+        .contenedor-principal #btn-derecha{
+        top: 50%;
+        }
+
+        .descripcion-productos h1 {
+            font-size: 8vw; 
+        }
+    
+        .descripcion-productos h2 {
+            font-size: 4vw; 
+        }        
+
+
+
+
         /* SECCION SERVICIOS */
     
           #servicios {
@@ -919,36 +960,8 @@ footer{
             line-height: 1.4; 
         }
     
-        /* SLIDER PRODUCTOS */
-        
-        .slider{
-            height: calc(90vh - 0px);
-        }
-    
-        #menu-productos .contenedor-principal {
-            justify-content: center;
-        }
-    
-        .imagen-productos {
-            width: 90%;
-            height: 45%;
-            margin-bottom: 20px;
-        }
-    
-        .imagen-productos img {
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        .contenedor-principal #btn-izquierda,
-        .contenedor-principal #btn-derecha{
-        top: 50%;
-    }
-    
 
-        
-    
+       
     
         /* SECCION OBJETIVOS */
     
@@ -1010,6 +1023,10 @@ footer{
         .textareaIcon i{
             top: 0;
             left: -5px;
+        }
+
+        .btn-input{
+            padding: 15px 50px;
         }
     
         /* ALERTAS */
