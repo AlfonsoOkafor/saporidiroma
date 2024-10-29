@@ -895,10 +895,6 @@ footer{
         .slider{
             height: calc(90vh - 0px);
         }
-
-        #menu-productos {
-            padding: 20px; 
-        }    
     
         #menu-productos .contenedor-principal {
             justify-content: center;
